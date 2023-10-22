@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightslategray;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  border: 1px solid bisque;
+  background-color: teal;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 5);
+  cursor: pointer;
+}
+
+.wrapper:hover {
+  background-color: lightgray;
+  color: teal;
+}
+
+.title {
+  color: bisque;
+  margin: 6px;
+}
+
+.text {
+  padding: 12px;
+}
+
+.main-image {
+  height: 200px;
+  width: 600px;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
