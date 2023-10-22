@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: bisque;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: rgb(48, 120, 95);
+  border: 2px solid royalblue;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.wrapper:hover {
+  background-color: rgb(127, 205, 165);
+  color: white;
+}
+
+.shake {
+  animation: 2s ease infinite;
+}
+
+@keyframes .shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translatex(-10px);
+  }
+}
+
+.title,
+p {
+  color: indianred;
+  padding: 12px;
+  margin: 6px;
+}
+
+.main-image {
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
