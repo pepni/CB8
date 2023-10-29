@@ -1,0 +1,317 @@
+/* COLORS
+#F25C05
+#182615
+#456E73
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Belanosima:wght@400;600&family=Dangrek&family=Lexend:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Anton", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 40px 40px;
+  text-decoration: none;
+  color: #456e73;
+  border: 1px solid #456e73;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: #456e73;
+  color: #f25c05;
+}
+
+.button2 {
+  display: inline-block;
+  padding: 40px 40px;
+  text-decoration: none;
+  color: #456e73;
+  border: 1px solid #456e73;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.button2:hover {
+  background-color: #f25c05;
+  color: #456e73;
+}
+
+h1 {
+  font-size: 48px;
+  position: relative;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+.display {
+  font-size: 56px;
+}
+
+footer {
+  font-size: 10px;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  background-color: #f25c05;
+}
+
+.header-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: #182615;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #456e73;
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  margin-top: 20px;
+  background-color: #f25c05;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.hero-text {
+  color: #182615;
+  width: 100%;
+}
+
+.hero-text span {
+  color: #456e73;
+}
+
+.hero-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img img {
+  animation: fish 3s ease-in-out infinite;
+}
+
+.hero-description {
+  margin-bottom: 20px;
+}
+
+.services span {
+  color: #456e73;
+}
+
+@keyframes fish {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text,
+  .hero-img {
+    width: 50%;
+  }
+}
+
+.intro {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: #182615;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* .fish2 {
+  position: absolute 20px 20px;
+} */
+
+.intro-title {
+  color: #456e73;
+}
+
+.intro-text span {
+  color: #f25c05;
+}
+
+.intro-p {
+  padding: 20px;
+}
+
+.services {
+  width: 100%;
+}
+
+.services-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.services-text {
+  width: 100%;
+  padding: 20px;
+}
+
+.services-image {
+  width: 100%;
+}
+
+.services-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-text,
+  .services-image {
+    width: 50%;
+  }
+}
+
+/*
+
+.schede-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 30%;
+  border: 1px solid bisque;
+  background-color: teal;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 5);
+  cursor: pointer;
+}
+
+*/
+
+.wrapper:hover {
+  background-color: lightgray;
+  color: teal;
+}
+
+.title {
+  color: bisque;
+  margin: 6px;
+}
+
+.text {
+  padding: 12px;
+}
+
+.main-image {
+  height: 200px;
+  width: 600px;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+/*.schede-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}*/
+
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: #456e73;
+  text-align: end;
+  padding: 20px;
+  margin: 20px;
+}
