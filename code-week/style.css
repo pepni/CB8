@@ -1,0 +1,255 @@
+/* COLORI
+#444850 NERO
+#DE5047 SALMONE
+#68A8B0 AZZURRO
+#62A887 VERDE
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@200;600;900&display=swap");
+
+html {
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 200;
+  color: #444850;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.header-wrapper {
+  position: absolute;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #444850;
+}
+
+.header-title {
+  margin: 0 auto;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-wrapper img {
+  margin-left: 20px;
+}
+
+.header-title span {
+  color: #de5047;
+  font-weight: bold;
+}
+
+body {
+  width: 100vw;
+  max-width: 2440px;
+  min-width: 320px;
+}
+
+.hero {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #68a8b0;
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 500px;
+  background-color: #68a8b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-search {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-search-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  height: 30px;
+  width: 300px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.hero-search-button {
+  height: 30px;
+  width: 80px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #444850;
+  color: #68a8b0;
+  border: 1px solid #62a887;
+  transition: all 0.5s ease-in-out;
+  box-sizing: border-box;
+  margin-left: 5px;
+}
+
+button {
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hero-search-button:hover {
+  background-color: #de5047;
+  color: #68a8b0;
+}
+
+a:hover {
+  color: #444850;
+}
+
+.contacts {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #de5047;
+}
+
+.contacts-title {
+  font-weight: bold;
+  color: #62a887;
+}
+
+.contacts-list-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts-list-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.contacts-list li,
+.my-contacts-list li {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #444850;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.contacts-list li button {
+  background-color: #68a8b0;
+  color: #ffffff;
+  border: none;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-contacts {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #444850;
+  font-size: 20px;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.my-contacts-title span {
+  font-weight: bold;
+  color: #62a887;
+}
+
+.contacts-list-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list-wrapper ul {
+  list-style-type: none;
+  margin: 10px;
+}
+.my-contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.my-contacts-list li button {
+  background-color: #de5047;
+  color: #ffffff;
+  border: none;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.move-button:hover {
+  background-color: #62a887;
+  color: #ffffff;
+}
+
+/* Aggiungi questo stile al tuo foglio di stile CSS */
+#error-message {
+  color: red;
+  display: none;
+  font-size: 16px;
+  margin-top: 10px; /* Aggiungi spazio sopra il messaggio di errore */
+}

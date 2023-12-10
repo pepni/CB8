@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+    <title>Code Week</title>
+  </head>
+
+  <body id="main-body">
+    <div class="header-wrapper">
+      <img src="./logo.png" alt="logo" height="40px" />
+      <h1 class="header-title">my <span href="#hero">Address Book </span></h1>
+    </div>
+    <div id="error-message" style="color: red; display: none">
+      Sorry, I can't find it :()
+    </div>
+    <section class="hero">
+      <div class="hero-wrapper">
+        <div class="hero-search">
+          <div class="hero-search-wrapper">
+            <input
+              type="text"
+              placeholder="Search by name, nickname or email"
+            />
+            <button class="hero-search-button">Go!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <h2 id="contacts-title" class="contacts-title">Contacts</h2>
+      <div class="contacts-list-wrapper">
+        <ul class="contacts-list"></ul>
+      </div>
+    </section>
+    <section id="my-contacts" class="my-contacts">
+      <h2 id="my-contacts-title" class="my-contacts-title">
+        my <span>Contacts</span>
+      </h2>
+      <div class="my-contacts-wrapper">
+        <ul class="my-contacts-list"></ul>
+      </div>
+    </section>
+  </body>
+</html>
